@@ -6,7 +6,7 @@ A federated learning project simulating 3 factories collaboratively training a d
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Tool |
 |---|---|
@@ -18,7 +18,7 @@ A federated learning project simulating 3 factories collaboratively training a d
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 federated-qc/
 ├── data/
 │   ├── factory_1/          # 80 good, 40 defect images
@@ -40,7 +40,7 @@ federated-qc/
 
 ---
 
-## 🚀 Phases
+## Phases
 
 - [x] Phase 1 — Environment setup (WSL2, packages, venv)
 - [x] Phase 2 — Synthetic dataset generation + CNN model
@@ -50,7 +50,7 @@ federated-qc/
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 ### 1. Clone the repo
 ```bash
@@ -81,7 +81,7 @@ python model/cnn.py
 
 ---
 
-## 🔑 Environment Variables
+## Environment Variables
 
 Create a `.env` file in the root (never commit this):
 GEMINI_API_KEY=your_gemini_api_key_here
@@ -92,7 +92,7 @@ AWS_REGION=us-east-1
 
 ---
 
-## 📌 Notes
+## Notes
 
 - NVIDIA FLARE does not support Windows natively — use WSL2
 - Dataset is synthetically generated to simulate real manufacturing defects (scratches, cracks, blobs)
