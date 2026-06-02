@@ -1,6 +1,6 @@
 # NVIDIA-Flare-Federated-Learning
 
-# 🏭 Federated Defect Detection with Agentic QC Insights
+# Federated Defect Detection with Agentic QC Insights
 
 A federated learning project simulating 3 factories collaboratively training a defect detection model — without sharing raw data.
 
