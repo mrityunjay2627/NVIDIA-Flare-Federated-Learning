@@ -1,0 +1,23 @@
+**QC Report: Federated Defect Detection Training**
+
+**1. Summary of Overall Federated Training Performance:**
+The federated learning system successfully trained a defect detection model with high accuracy across all three factories. Final accuracies ranged from 97.5% to 99.2%, indicating a robust overall model.
+
+**2. Factory Performance Analysis:**
+*   **Factory 1:** Achieved the highest performance with 99.2% accuracy and the lowest final loss of 0.051, demonstrating excellent local learning and model fit.
+*   **Factory 3:** Performed well, reaching 97.5% accuracy with a final loss of 0.089. Its convergence was steady and consistent.
+*   **Factory 2:** While achieving 97.5% accuracy (on par with Factory 3), it exhibited an unusual training pattern. Its accuracy and loss plateaued significantly between rounds 2 and 3 before a sharp improvement in round 4. Its final loss (0.111) is notably higher than the other factories.
+
+**3. QC Concerns:**
+*   **Loss Discrepancy & Potential Data Issues:** Factory 2's final loss (0.111) is more than double that of Factory 1 (0.051), suggesting its local model either learned less efficiently or faced more challenging/noisier data. This large gap warrants investigation.
+*   **Uneven Convergence (Factory 2):** The plateau observed in Factory 2's metrics between rounds 2 and 3 is a concern. This inconsistent learning progress could indicate temporary issues with local data, compute resources, or network connectivity during those rounds.
+
+**4. Operational Recommendations for QC Team:**
+*   **Investigate Factory 2's Local Data:** Analyze Factory 2's local dataset for potential data quality issues, anomalies, class imbalance, or unique distribution characteristics that could explain the higher loss and uneven convergence.
+*   **Review Factory 2's Local Training Logs:** Examine detailed logs for Factory 2 during rounds 2 and 3 to identify any specific errors, warnings, or resource bottlenecks that may have contributed to the plateau.
+*   **Establish Baseline Loss Targets:** Define acceptable ranges for final loss metrics per factory, or relative to the best performer, to proactively flag future deviations.
+
+**5. Overall System Health:**
+**YELLOW**
+
+**Rationale:** While final accuracies are good, the significant loss discrepancy and inconsistent convergence pattern observed at Factory 2 indicate an area of potential instability or inefficiency that needs immediate investigation to ensure long-term system robustness and optimal performance across all federated participants.
