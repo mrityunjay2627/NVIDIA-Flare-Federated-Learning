@@ -1,0 +1,3 @@
+Model: /tmp/flare_workspace2/server/simulate_job/app_server/FL_global_model.pt
+S3 Key: federated-qc/FL_global_model_20260611_133532.pt
+Bucket: nvidia-flare-federated-bucket
